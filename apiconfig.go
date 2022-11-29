@@ -18,9 +18,6 @@ type CfgBase struct {
 	Port      string
 	URIPrefix string
 	Timeout   time.Duration
-	// LoggingLevel string
-	/* EnabledTracing bool
-	EnabledMetrics bool */
 }
 
 // Configurator Interfaz configurador de apiconfig.
@@ -34,15 +31,7 @@ type configurator struct {
 }
 
 const (
-	// configError = "Error reading ConfigFile".
-
-	// flagError = "Error with FlagConfigurator".
-
 	noEntriesError = "no entries given"
-
-	// valueError = "No value given to the variable through config file, environment variables or flag".
-
-	// typeResolverError = "Error on ResolveType".
 )
 
 // NewConfigurator constructor.

@@ -33,7 +33,7 @@ linters:
         - containedctx
         - contextcheck
         - cyclop
-        - decorder
+        # - decorder
         - depguard
         - dogsled
         - dupl
@@ -106,6 +106,7 @@ linters:
         - ifshort
         - maligned
         - scopelint
+        - decorder
 
         # I do not use it
         - goerr113

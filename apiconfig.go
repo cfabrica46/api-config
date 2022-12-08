@@ -10,7 +10,7 @@ import (
 
 var (
 	ErrTypeResolver = errors.New("error on ResolveType")
-	ErrTypeMap      = errors.New("error asign value on map")
+	ErrTypeMap      = errors.New("error assign value on map")
 )
 
 // ConfigEntry entrada de configuración.

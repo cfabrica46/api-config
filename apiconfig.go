@@ -14,7 +14,7 @@ var (
 	ErrTypeMap      = errors.New("error assign value on map")
 )
 
-// ConfigEntry entrada de configuración.
+// ConfigEntry entrada de configuración/
 type ConfigEntry struct {
 	DefaultValue any
 	VariableName string

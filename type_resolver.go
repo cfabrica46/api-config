@@ -47,11 +47,11 @@ func (v *variableTypeResolver) ResolveType(data any) (VariableType, error) {
 	stringType := reflect.TypeOf(data).String()
 	switch stringType {
 	case "int":
-		typeData = TypeBool
+		typeData = TypeInt
 	case "bool":
 		typeData = TypeBool
 	case "string":
-		typeData = TypeBool
+		typeData = TypeString
 	default:
 		return TypeNone, ErrorTypeNone
 	}

@@ -2,6 +2,7 @@ package apiconfig
 
 import (
 	"errors"
+	"fmt"
 	"time"
 
 	"github.com/spf13/pflag"
@@ -86,7 +87,7 @@ func (c *configurator) Configure(entries []ConfigEntry) (map[string]any, error) 
 		}
 
 		if !ok {
-			return nil, ErrTypeMap
+			return nil, fmt.Errorf("%w: type: %v -  val: %v", ErrTypeMap, valType, val)
 		}
 	}
 
